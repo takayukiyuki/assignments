@@ -1,0 +1,2 @@
+/Users/andoutakayuki/android studio/AndroidTraining-master/AndroidStudio/assignments/fundamentals/2nd/ControllerAssignment2/app/build/intermediates/classes/debug
+/Users/andoutakayuki/android studio/AndroidTraining-master/AndroidStudio/assignments/fundamentals/2nd/ControllerAssignment2/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-f7e16e23c5079bde6600f935870c3640a76630de.jar
