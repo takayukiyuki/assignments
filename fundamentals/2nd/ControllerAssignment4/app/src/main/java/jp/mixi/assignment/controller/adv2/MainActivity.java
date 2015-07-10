@@ -41,6 +41,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onStart() {
         super.onStart();
+        //直接neし続けるとメモリリークする
         myBroadcastReceiver = new MyBroadcastReceiver();
         // ヘッドセットの接続状態を監視し、接続状態の変化があった時のブロードキャストメッセージを受信する
         registerReceiver(myBroadcastReceiver, new IntentFilter(Intent.ACTION_HEADSET_PLUG));
@@ -48,6 +49,7 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onStop() {
+        //unregisしないと永遠にreservする（？）
         if(myBroadcastReceiver != null){
             unregisterReceiver(myBroadcastReceiver);
         }
